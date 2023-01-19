@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Readex pro", sans-serif;
+}
+.nav {
+  display: flex;
+  margin-top: 20px;
+}
+.logo-image {
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.company-card {
+  position: relative;
+  display: inline-flex;
+}
+.company_button {
+  border: none;
+  background: none;
+  padding-bottom: 15px;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+.company_button:hover {
+  color: hsl(0, 0%, 8%);
+}
+.company--button--secondary {
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.company--list {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 40px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.company--list--visible {
+  display: initial;
+}
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.to-do {
+  display: flex;
+  padding: 6px;
+  font-size: 16px;
+  color: hsl(0, 0%, 41%);
+  font-weight: bold;
+  cursor: pointer;
+}
+.to-do:hover {
+  color: hsl(0, 0%, 8%);
+}
+.features-list {
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 63px;
+  left: 226px;
+  display: none;
+}
+.features {
+  display: inline-flex;
+  margin-right: 50px;
+}
+.features--button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+  font-weight: bold;
+}
+.features--button:hover {
+  color: hsl(0, 0%, 8%);
+}
+.features-list-visible {
+  display: initial;
+}
+.career-first-line,
+.about-first-line,
+.login-first-line,
+.button-register {
+  padding: 8px;
+}
+.career {
+  margin-right: 50px;
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
+  font-weight: bold;
+}
+.career:hover {
+  color: hsl(0, 0%, 8%);
+}
+.about {
+  cursor: pointer;
+  margin-right: 400px;
+  color: hsl(0, 0%, 41%);
+  font-weight: bold;
+}
+.about:hover {
+  color: hsl(0, 0%, 8%);
+}
+.login {
+  margin-right: 50px;
+  cursor: pointer;
+  padding: 5px;
+  color: hsl(0, 0%, 41%);
+  font-weight: bold;
+}
+.login:hover {
+  color: hsl(0, 0%, 8%);
+}
+.button-register {
+  border-radius: 15px;
+  padding: 12px 25px;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  font-weight: bold;
+}
+.button-register:hover {
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+.container {
+  display: flex;
+}
+.card {
+  margin-left: 190px;
+}
+.remote-work {
+  font-size: 50px;
+  margin-top: 160px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.remote-first-line {
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.learn-more {
+  padding: 12px 25px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 18px;
+  border-radius: 15px;
+  margin-bottom: 55px;
+  border: 1px solid;
+}
+.learn-more:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+.full-image {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.autophile,
+.meet,
+.maker {
+  margin-left: 15px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  .card {
+    margin-left: 10px;
+  }
+  .remote-work {
+    font-size: 50px;
+    margin-top: 10px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .full-image {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .nav {
+    display: block;
+  }
+  .features-card,
+  .mab,
+  .career,
+  .about,
+  .login,
+  .register {
+    margin-left: 20px;
+  }
+  .remote-first-line {
+    text-align: center;
+  }
+  .learn-more {
+    margin-left: 110px;
+  }
+  .all-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
